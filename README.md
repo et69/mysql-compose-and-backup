@@ -3,9 +3,9 @@ MySQL container is created with docker compose and create a persistent volume fo
 
 ## docker-compose.yaml:
 1. Define the name for the project(optional). Default will be project folder.
-```bash
-name:
-```
+    ```bash
+    name:
+    ```
 2. Add the mysql username, password, db name in the environment file, just the password for now:
    ```bash
    $ echo MYSQL_ROOT_PASSWORD=your_secret_password > pass.env
@@ -25,7 +25,7 @@ name:
 
 1. Just a simple script for backup, nothing special:
 
->Need to escape $ with \\$
+>Need to escape $ with \\$ or using double quote inside single quote. Using each format in each file.
 
 `$ ./backup.sh`
 
