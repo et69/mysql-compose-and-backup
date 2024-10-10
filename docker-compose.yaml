@@ -1,0 +1,11 @@
+name: my-project
+services:
+  db:
+    image: mysql:8.0
+    env_file:
+      - ./pass.env
+    volumes:
+      - mysql-db:/var/lib/mysql
+      - ./backup:/backup
+volumes:
+  mysql-db:
